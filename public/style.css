@@ -1,0 +1,5 @@
+/* this file is loaded by index.html and styles the page */
+
+input {
+  padding: 3px;
+}

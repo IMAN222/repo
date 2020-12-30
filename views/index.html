@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Post Mirror Test</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <script type="text/JavaScript" src="https://MomentJS.com/downloads/moment-with-locales.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js" type="text/javascript" charset="utf-8"></script>
+    
+    <script src="/script.js" defer></script> <!-- "defer"-attribute makes the script run only after page has fully parsed -->
+    <script src="/chartfunc.js" defer></script> <!-- the function drawing the chart -->
+    
+  </head>
+
+  <body>
+    <p>Device ID</p>
+    <input id="inputId" type="text" value="test1" />
+    <br />
+    <br />
+    <p>Value</p>
+    <input id="inputValue" type="text" placeholder="enter a Value" />
+    <br />
+    <br />
+    <button type="button" onclick="buttonFunction()">POST "mirror"</button>
+    <pre id="resp">...response...</pre>
+    <p id="debug">debug</p>
+    
+    <div class="chart-container" style="position: relative; height:40vh; width:80vw; max-width:640px; max-height:360px; min-width:300px; min-height:250px">
+      <canvas id="myChart"></canvas>
+    </div>
+    
+    <script>
+      //createDayGraph();
+    </script>
+    
+  </body>
+</html>
